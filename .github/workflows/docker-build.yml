@@ -33,7 +33,7 @@ jobs:
       run: |
         curl --fail http://localhost:8080/top-actors || exit 1
 
-    - name: Stop Flask app container
-      run: |
-        docker stop flask-container
-        docker rm flask-container
+    #- name: Stop Flask app container
+    #  run: |
+    #    docker stop flask-container
+    #    docker rm flask-container
