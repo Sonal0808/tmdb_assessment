@@ -43,16 +43,12 @@ This is a simple Flask web application that interacts with The Movie Database (T
 	•	Make sure Docker is installed on your system.
 2. 📁 Project Structure
 Your project directory should look like this:
-
-	.
-
+ ```    .
 	├── app.py
-
 	├── requirements.txt
-
-	└── Dockerfile
-3. 📦 Build the Docker Image:👉 
+	└── Dockerfile```
+4. 📦 Build the Docker Image:👉 
    docker build -t tmdb-flask-app .
-4. 🚀 Run the Container:👉  
+5. 🚀 Run the Container:👉  
    docker run -p 8080:8080 tmdb-flask-app
-5. Visit app at http://localhost:8080/top-actors
+6. Visit app at http://localhost:8080/top-actors
