@@ -40,10 +40,10 @@ This is a simple Flask web application that interacts with The Movie Database (T
 2. 📁 Project Structure
 Your project directory should look like this:
 
-.
-├── app.py
-├── requirements.txt
-└── Dockerfile
+	.
+	├── app.py
+	├── requirements.txt
+	└── Dockerfile
 3. 📦 Build the Docker Image
    docker build -t tmdb-flask-app .
 4. 🚀 Run the Container
