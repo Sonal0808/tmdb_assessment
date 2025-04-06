@@ -59,17 +59,17 @@ Why Workflow ?
 
 Although I can run this Flask app manually or inside a Docker container on my local machine, I created this GitHub Actions workflow for a few key reasons:
 
-**Automation & Consistency**
+Automation & Consistency
 By using a workflow, I ensure that every time I push to the main branch:
 	•The app is built inside a Docker container
 	•The container is run
 	•The /top-actors endpoint is tested for availability
 This eliminates human error and guarantees that each deployment or update passes a basic functionality check.
 
-**Quick Feedback Loop**
+Quick Feedback Loop
 Instead of manually spinning things up to verify changes, this workflow automatically tests that the app starts up and responds correctly. If something breaks, I get feedback immediately after a push.
 
-**Why a Self-Hosted Runner?**
+Why a Self-Hosted Runner?
 I chose a self-hosted runner for a few reasons:
 	•I needed access to resources or configurations that GitHub-hosted runners don’t allow (run on my local host to test the webapp).
 	•I wanted more control over the environment and caching to reduce cold starts.
