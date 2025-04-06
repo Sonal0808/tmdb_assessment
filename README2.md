@@ -1,4 +1,4 @@
-🎬 #TMDB Stand Alone Flask App
+**🎬 #TMDB Stand Alone Flask App**
 
 This is a simple Flask web application that interacts with The Movie Database (TMDB) API to display:
 	•	🏆 The most popular movies sorted by vote count.
