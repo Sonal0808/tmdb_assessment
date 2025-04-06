@@ -1,25 +1,25 @@
-🎬 TMDB Stand Alone Flask App
+🎬 #TMDB Stand Alone Flask App
 
 This is a simple Flask web application that interacts with The Movie Database (TMDB) API to display:
 	•	🏆 The most popular movies sorted by vote count.
 	•	🌟 The most popular actors, sorted by the number of movies they’ve appeared in.
 ⸻
-1. 🚀 Features
+1. 🚀 ##Features
 	•	/popular-movies — Lists popular movies sorted by number of votes.
 	•	/top-actors — Lists popular actors sorted by how many movies they’ve acted in. Supports pagination via query parameter actors_per_page.
 ⸻
-2. 📦 Requirements
+2. 📦 ##Requirements
 	•	Python 3.7+
 	•	Flask
 	•	requests
 	•	pandas 
- 3. 🛠 How to Run
+ 3. 🛠 ##How to Run
 	1.	Clone the repository or copy the code into a Python file (e.g., app.py).
 	2.	Make sure you have Python installed and dependencies installed.
 	3.	Run the app:👉 python3 app.py
- 4.	The server will start at:👉 http://localhost:8080
+	The server will start at:👉 http://localhost:8080
  ⸻
-4. 🌐 Endpoints
+4. 🌐 ##Endpoints
 	/popular-movies
 	•	Method: GET
 	•	Description: Returns an HTML page listing popular movies and their vote counts.
