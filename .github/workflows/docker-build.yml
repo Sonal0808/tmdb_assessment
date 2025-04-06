@@ -31,7 +31,7 @@ jobs:
 
     - name: Test Flask app is running
       run: |
-        curl --fail http://localhost:8080 || exit 1
+        curl --fail http://localhost:8080/top-actors || exit 1
 
     - name: Stop Flask app container
       run: |
