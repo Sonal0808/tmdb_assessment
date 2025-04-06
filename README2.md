@@ -39,6 +39,7 @@ This is a simple Flask web application that interacts with The Movie Database (T
 	•	Make sure Docker is installed on your system.
 2. 📁 Project Structure
 Your project directory should look like this:
+
 .
 ├── app.py
 ├── requirements.txt
