@@ -41,6 +41,8 @@ This is a simple Flask web application that interacts with The Movie Database (T
 Your project directory should look like this:
 
 	.
+
+
 	├── app.py
 
 
