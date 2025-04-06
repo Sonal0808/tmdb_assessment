@@ -32,7 +32,7 @@ This is a simple Flask web application that interacts with The Movie Database (T
 	•actors_per_page (optional): Number of actors per page (default is 20). Pagination is handled manually for /top-actors, but the output is combined into a single HTML page.
 	•Example: http://localhost:8080/top-actors?actors_per_page=10
 ```
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **🐳 Docker Setup**
 Docker helps to containarise and run applications wiht all dependencies and can be shipped to any machine.
@@ -50,4 +50,42 @@ Your project directory should look like this:
 5. 🚀 Run the Container:👉  
    docker run -p 8080:8080 tmdb-flask-app
 6. Visit app at http://localhost:8080/top-actors
+```
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+**🐳 GitHub Workflow: docker-build.yml**
+```
+Why Workflow ?
+
+Although I can run this Flask app manually or inside a Docker container on my local machine, I created this GitHub Actions workflow for a few key reasons:
+
+✅ Automation & Consistency
+By using a workflow, I ensure that every time I push to the main branch:
+	•The app is built inside a Docker container
+	•The container is run
+	•The /top-actors endpoint is tested for availability
+This eliminates human error and guarantees that each deployment or update passes a basic functionality check.
+
+🧪 Quick Feedback Loop
+Instead of manually spinning things up to verify changes, this workflow automatically tests that the app starts up and responds correctly. If something breaks, I get feedback immediately after a push.
+
+🖥️ Why a Self-Hosted Runner?
+I chose a self-hosted runner for a few reasons:
+	•I needed access to resources or configurations that GitHub-hosted runners don’t allow (run on my local host to test the webapp).
+	•I wanted more control over the environment and caching to reduce cold starts.
+
+📦 What This Workflow Does
+Here’s what the docker-build.yml workflow accomplishes:
+	1.Checks out the code
+	2.Sets up Docker Buildx (for advanced Docker builds)
+	3.Builds the Docker image tagged my-flask-app
+	4.Runs the container, mapping port 8080
+	5.Waits for the app to start up (simple sleep command)
+	6.Tests the app using a curl call to ensure /top-actors responds successfully
+        7.It does not stop the container as I want it to run so we can test. 
+
+Create a Directory for the Runner - mkdir actions-runner && cd actions-runner 
+Download the Latest Runner Package - curl -o actions-runner.tar.gz -L https://github.com/actions/runner/releases/latest/download/actions-runner-osx-x64-2.308.0.tar.gz 
+Extract the Installer - tar xzf ./actions-runner.tar.gz 
+Configure the Runner - ./config.sh --url https://github.com/Sonal0808/tmdb_assessment --token BREWOER55SJ4M6BNXHIQNCDH6LPKK 
+Start the Runner - ./run.sh
 ```
