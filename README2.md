@@ -1,4 +1,4 @@
-**🎬 #TMDB Stand Alone Flask App**
+**🎬 TMDB Stand Alone Flask App**
 
 This is a simple Flask web application that interacts with The Movie Database (TMDB) API to display:
 	•	🏆 The most popular movies sorted by vote count.
@@ -37,7 +37,7 @@ This is a simple Flask web application that interacts with The Movie Database (T
 	•	Example: http://localhost:8080/top-actors?actors_per_page=10
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-🐳 Docker Setup
+**🐳 Docker Setup **
 
 1. ✅ Prerequisites
 	•	Make sure Docker is installed on your system.
