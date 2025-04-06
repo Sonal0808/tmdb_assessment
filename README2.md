@@ -27,9 +27,13 @@ This is a simple Flask web application that interacts with The Movie Database (T
 ⸻
 /top-actors
 	•	Method: GET
+
 	•	Description: Returns an HTML page listing popular actors and how many movies they’ve appeared in.
+
 	•	Query Parameter:
+
 	•	actors_per_page (optional): Number of actors per page (default is 20). Pagination is handled manually for /top-actors, but the output is combined into a single HTML page.
+
 	•	Example: http://localhost:8080/top-actors?actors_per_page=10
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -47,8 +51,8 @@ Your project directory should look like this:
 	├── requirements.txt
 
 	└── Dockerfile
-3. 📦 Build the Docker Image: 
+3. 📦 Build the Docker Image:👉 
    docker build -t tmdb-flask-app .
-4. 🚀 Run the Container: 
+4. 🚀 Run the Container:👉  
    docker run -p 8080:8080 tmdb-flask-app
 5. Visit app at http://localhost:8080/top-actors
