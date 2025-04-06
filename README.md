@@ -46,9 +46,9 @@ Your project directory should look like this:
 	├── app.py
 	├── requirements.txt
 	└── Dockerfile```
-4. Build the Docker Image:👉 
+4. Build the Docker Image: 
    docker build -t tmdb-flask-app .
-5. Run the Container:👉  
+5. Run the Container:  
    docker run -p 8080:8080 tmdb-flask-app
 6. Visit app at http://localhost:8080/top-actors
 ```
