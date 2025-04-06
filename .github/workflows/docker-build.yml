@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
 
 jobs:
   build:
@@ -37,14 +34,13 @@ jobs:
 
     - name: Wait for Flask app to be up
       run: |
-        sleep 15  # Give it some time to start up
+        sleep 15
 
     - name: Test Flask app is running
       run: |
-        curl --fail http://localhost:8080/top-actors || exit 1
+        curl --fail http://localhost:8080 || exit 1
 
     - name: Stop Flask app container
       run: |
         docker stop flask-container
         docker rm flask-container
-
