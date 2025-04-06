@@ -33,8 +33,8 @@ This is a simple Flask web application that interacts with The Movie Database (T
 	•	Example: http://localhost:8080/top-actors?actors_per_page=10
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-_**🐳 Docker Setup
-*_*__
+🐳 Docker Setup
+
 1. ✅ Prerequisites
 	•	Make sure Docker is installed on your system.
 2. 📁 Project Structure
