@@ -42,7 +42,11 @@ Your project directory should look like this:
 
 	.
 	├── app.py
+
+
 	├── requirements.txt
+
+
 	└── Dockerfile
 3. 📦 Build the Docker Image
    docker build -t tmdb-flask-app .
