@@ -20,12 +20,12 @@ This is a simple Flask web application that interacts with The Movie Database (T
  4.	The server will start at:👉 http://localhost:8080
  ⸻
 4. 🌐 Endpoints
-/popular-movies
+	/popular-movies
 	•	Method: GET
 	•	Description: Returns an HTML page listing popular movies and their vote counts.
 	•	Example: http://localhost:8080/popular-movies
 ⸻
-/top-actors
+	/top-actors
 	•	Method: GET
 
 	•	Description: Returns an HTML page listing popular actors and how many movies they’ve appeared in.
