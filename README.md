@@ -74,7 +74,7 @@ I chose a self-hosted runner for a few reasons:
 	•I needed access to resources or configurations that GitHub-hosted runners don’t allow (run on my local host to test the webapp).
 	•I wanted more control over the environment and caching to reduce cold starts.
 
-**What This Workflow Does**
+What This Workflow Does
 Here’s what the docker-build.yml workflow accomplishes:
 	1.Checks out the code
 	2.Sets up Docker Buildx (for advanced Docker builds)
