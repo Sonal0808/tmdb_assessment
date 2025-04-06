@@ -81,8 +81,10 @@ Here’s what the docker-build.yml workflow accomplishes:
 	4.Runs the container, mapping port 8080
 	5.Waits for the app to start up (simple sleep command)
 	6.Tests the app using a curl call to ensure /top-actors responds successfully
-        7.It does not stop the container as I want it to run so we can test. 
-
+        7.It does not stop the container as I want it to run so we can test.
+```
+Use the below runner config from the repo to setup a self-hosted runner:
+```
 Create a Directory for the Runner - mkdir actions-runner && cd actions-runner 
 Download the Latest Runner Package - curl -o actions-runner.tar.gz -L https://github.com/actions/runner/releases/latest/download/actions-runner-osx-x64-2.308.0.tar.gz 
 Extract the Installer - tar xzf ./actions-runner.tar.gz 
