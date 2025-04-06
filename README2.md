@@ -48,7 +48,7 @@ Your project directory should look like this:
 
 	└── Dockerfile
 3. 📦 Build the Docker Image
-   docker build -t tmdb-flask-app .
+   •docker build -t tmdb-flask-app .
 4. 🚀 Run the Container
-   docker run -p 8080:8080 tmdb-flask-app
+   •docker run -p 8080:8080 tmdb-flask-app
 5. Visit app at http://localhost:8080/top-actors
