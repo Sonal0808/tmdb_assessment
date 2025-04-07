@@ -15,7 +15,7 @@ This is a simple Flask web application that interacts with The Movie Database (T
 	•pandas
 
 3. How to Run
-	1.Clone the repository or copy the code into a Python file (e.g., app.py).
+	1.Code into a Python file (e.g., app.py).
 	2.Make sure you have Python installed and dependencies installed.
 	3.Run the app: python3 app.py
 	The server will start at: http://localhost:8080
@@ -36,7 +36,7 @@ This is a simple Flask web application that interacts with The Movie Database (T
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Docker Setup**
-Docker helps to containarise and run applications wiht all dependencies and can be shipped to any machine.
+Docker helps to containarise and run application wiht all dependencies and can be shipped to any machine.
 ```
 1. Prerequisites
 	•Make sure Docker is installed on your system.
